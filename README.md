@@ -7,8 +7,14 @@ The paper is available at [arXiv].
 
 
 <div align="center">
+<img src="img/fra-st-cot.png">
+</div>
+
+<div align="center">
 <img src="img/framework.png">
 </div>
+
+
 
 ## Installation
 Make sure you have Python>=3.8 installed on your machine.
@@ -66,7 +72,27 @@ pre_three_list:  ['A', 'A', 'A']
 **Ground Truth** : A
 
 
+*****************************
 
+### Partial Experiment
+
+
+| **Method**                  | **MultiArith** | **GSM8K** | **SingleEq** | **AddSub** | **AQuA** | **SVAMP** |
+|-----------------------------|----------------|-----------|--------------|------------|----------|-----------|
+| Zero-Shot                  | 51.2           | 10.8      | 62.4         | 56.7       | 38.6     | 56.3      |
+| Zero-Shot-CoT              | 92.8           | 74.7      | 84.4         | 74.7       | 55.5     | 77.0      |
+| Zero-Shot-CoT + SC         | 95.7           | 79.2      | 88.8         | 81.3       | 63.0     | 82.2      |
+| + **TSP** | **97.0** (+1.3) | **81.1** (+1.8) | **90.0** (+1.2) | **84.8** (+3.5) | **65.7** (+2.7) | **85.5** (+3.3) |
+| + **ARI** | **96.7** (+1.0) | **82.6** (+3.4) | **92.1** (+3.3) | **87.1** (+5.8) | **69.3** (+6.3) | **87.1** (+4.9) |
+| + **TSP + ARI** | **98.2** (+2.5) | **83.0** (+3.8) | **92.9** (+4.1) | **88.4** (+7.1) | **70.1** (+7.1) | **87.5** (+5.3) |
+
+**Table:** Accuracy (%) across six arithmetic datasets from zero-shot reasoning tasks. The number of self-consistency (SC) sampling is fixed at 3 for all cases. Values in parentheses indicate performance increases compared to the "Zero-Shot-CoT + SC" method.
+
+<div align="center">
+<img src="img/compa.png">
+</div>
+
+*****************************
 
 
 ## Citation
