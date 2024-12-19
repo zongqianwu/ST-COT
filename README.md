@@ -3,7 +3,7 @@
 This is the official implementation of `Rethinking Chain-of-Thought from the Perspective of Self-Training`.
 
 [//]: # (The paper is available at [arXiv]&#40;https://arxiv.org/abs/2205.11916&#41;.)
-The paper is available at [arXiv].
+The paper is available at [arXiv](https://arxiv.org/abs/2412.10827).
 
 
 <div align="center">
