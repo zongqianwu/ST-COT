@@ -97,5 +97,10 @@ pre_three_list:  ['A', 'A', 'A']
 
 ## Citation
 ```
-Upcoming
+@article{wu2024rethinking,
+  title={Rethinking Chain-of-Thought from the Perspective of Self-Training},
+  author={Wu, Zongqian and Xu, Baoduo and Cui, Ruochen and Zhan, Mengmeng and Zhu, Xiaofeng and Feng, Lei},
+  journal={arXiv preprint arXiv:2412.10827},
+  year={2024}
+}
 ```
